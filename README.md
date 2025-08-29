@@ -1,6 +1,6 @@
 # Arch Linux Environment Setup
 
-Personal (opinionated) Arch Linux enviroment set up for web development
+Personal Arch Linux enviroment set up for web development
 
 ## Usage
 

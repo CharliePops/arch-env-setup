@@ -6,7 +6,8 @@ sudo pacman -S --noconfirm --needed \
     bash-completion \
     btop \
     fzf \
-    ufw 
+    chromium \
+    ufw
 
 yay -S --noconfirm --needed \
     cursor-bin \
