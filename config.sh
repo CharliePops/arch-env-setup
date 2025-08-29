@@ -12,19 +12,34 @@ if [ ! -f "$HOME/.ssh/id_ed25519" ]; then
     ssh-add "$HOME/.ssh/id_ed25519"
 fi
 
+show_separator
+
 # Make bash the default shell
 echo "Making bash the default shell..."
 chsh -s /bin/bash
 echo "Bash is now the default shell!"
+
+show_separator
 
 # Copy tmux.conf
 echo "Copying tmux.conf..."
 cp tmux.conf "$HOME/.tmux.conf"
 echo "Tmux.conf copied successfully!"
 
+show_separator
+
 # Copy .bashrc to home
 echo "Copying bashrc..."
 cp .bashrc "$HOME/.bashrc"
 echo "Bashrc copied successfully!"
+
+show_separator
+
+# Copy alacritty config
+echo "Copying Alacritty config..."
+cp .alacritty.toml "$HOME/.alacritty.toml"
+echo "Alacritty config copied successfully!"
+
+show_separator
 
 source "$HOME/.bashrc"

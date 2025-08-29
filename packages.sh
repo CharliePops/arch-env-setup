@@ -1,18 +1,23 @@
 sudo pacman -S --noconfirm --needed \
+    alacritty \
     base-devel \
-    yay \
-    neovim \
-    tmux \
     bash-completion \
     btop \
-    fzf \
     chromium \
+    eza \
+    fzf \
+    neovim \
+    tmux \
     ufw \
-    eza
+    yay
+
+show_separator
 
 yay -S --noconfirm --needed \
     cursor-bin \
     visual-studio-code-bin
+
+show_separator
 
 # Install VSCode extensions
 code --install-extension dbaeumer.vscode-eslint 
