@@ -25,4 +25,6 @@ echo "Tmux.conf copied successfully!"
 # Copy .bashrc to home
 echo "Copying bashrc..."
 cp .bashrc "$HOME/.bashrc"
-echo "Bashrc copied successfully!"mp
+echo "Bashrc copied successfully!"
+
+source "$HOME/.bashrc"
