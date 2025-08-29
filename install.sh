@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Exit on error
+set -eE
+
+clear
+
+# Must not be run as root
+[ "$EUID" -eq 0 ] && abort "Running as root, must not be run as root"
+
+# Verify the script is running on Arch Linux
+if ! grep -qi "arch" /etc/os-release; then
+    echo "This script must be run on Arch Linux."
+    exit 1
+fi
+
+# get username and email from input
+read -p "Enter your username for git: " USERNAME
+read -p "Enter your email for git: " EMAIL
+
+echo "Username: $USERNAME"
+echo "Email: $EMAIL"
+
+echo "Home directory: $HOME"
+
+# set configuration
+source ./config.sh
+
+# Install packages
+source ./packages.sh
+
+echo "Installation complete!"
+
+
