@@ -14,7 +14,7 @@ echo "Copying tmux.conf..."
 cp tmux.conf "$HOME/.tmux.conf"
 echo "Tmux.conf copied successfully!"
 
-# Add .bashrc contents to 
-echo "Adding .bashrc content..."
-cat .bashrc >> "$HOME/.bashrc"
-echo "Bashrc content added successfully!"
+# Copy .bashrc to home
+echo "Copying bashrc..."
+cp .bashrc "$HOME/.bashrc"
+echo "Bashrc copied successfully!"mp

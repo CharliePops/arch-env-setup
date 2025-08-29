@@ -6,7 +6,7 @@ set -eE
 clear
 
 # Must not be run as root
-[ "$EUID" -eq 0 ] && abort "Running as root, must not be run as root"
+[ "$EUID" -eq 0 ] && abort "Error, must not be run as root"
 
 # Verify the script is running on Arch Linux
 if ! grep -qi "arch" /etc/os-release; then

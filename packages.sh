@@ -6,11 +6,12 @@ sudo pacman -S --noconfirm --needed \
     bash-completion \
     btop \
     fzf \
-    ufw \
-    rustup \
+    ufw 
 
-sudo yay -S --noconfirm --needed \
+yay -S --noconfirm --needed \
     cursor-bin \
     visual-studio-code-bin
 
-code --install-extension dbaeumer.vscode-eslint esbenp.prettier-vscode vscodevim.vim
+code --install-extension dbaeumer.vscode-eslint 
+code --install-extension esbenp.prettier-vscode 
+code --install-extension eamodio.gitlens
