@@ -23,7 +23,7 @@ echo "Email: $EMAIL"
 
 echo "Home directory: $HOME"
 
-# set configuration
+# Set configuration
 source ./config.sh
 
 # Install packages

@@ -31,6 +31,9 @@ alias gre='git restore'
 alias grs='git restore --staged'
 alias v='vim'
 alias n='nvim'
+alias t='tmux'
+alias c='clear'
+
 # Just start tmux automatically
 if [ -z "$TMUX" ]; then
   tmux attach-session -t default || tmux new-session -s default
