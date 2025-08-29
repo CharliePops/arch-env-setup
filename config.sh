@@ -42,4 +42,11 @@ echo "Alacritty config copied successfully!"
 
 show_separator
 
+# copy functions.sh to home
+echo "Copying functions.sh..."
+cp functions.sh "$HOME/functions.sh"
+echo "functions.sh copied successfully!"
+
+show_separator
+
 source "$HOME/.bashrc"
