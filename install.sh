@@ -31,4 +31,15 @@ source ./packages.sh
 
 echo "Installation complete!"
 
+echo "Reboot is recommended to apply all changes."
+
+read -p "Do you want to reboot now? (y/N): " CONFIRM
+if [[ ! "$CONFIRM" =~ ^[Yy]$ ]]; then
+    echo "Reboot cancelled."
+    exit 0
+fi
+
+sleep 5
+sudo reboot
+
 
