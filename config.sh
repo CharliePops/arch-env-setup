@@ -48,5 +48,3 @@ cp functions.sh "$HOME/functions.sh"
 echo "functions.sh copied successfully!"
 
 show_separator
-
-source "$HOME/.bashrc"

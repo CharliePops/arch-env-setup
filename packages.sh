@@ -15,7 +15,8 @@ show_separator
 
 yay -S --noconfirm --needed \
     cursor-bin \
-    visual-studio-code-bin
+    visual-studio-code-bin \
+    nvm
 
 show_separator
 

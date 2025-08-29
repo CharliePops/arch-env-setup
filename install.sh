@@ -35,15 +35,14 @@ source ./packages.sh
 
 echo "Installation complete!"
 
-echo "Reboot is recommended to apply all changes."
-
-read -p "Do you want to reboot now? (y/N): " CONFIRM
+read -p "Do you want to restart the terminal now? (y/N): " CONFIRM
 if [[ ! "$CONFIRM" =~ ^[Yy]$ ]]; then
-    echo "Reboot cancelled."
+    echo "Restart your terminal or run 'source ~/.bashrc' to make sure changes are applied."
     exit 0
 fi
 
-sleep 5
-sudo reboot
+echo "Restarting terminal..."
+sleep 3
+exec bash
 
 
