@@ -37,9 +37,6 @@ alias ls='eza -lh --group-directories-first --icons=auto'
 
 PS1='\u@\h:\w \$ '
 
-force_color_prompt=yes
-color_prompt=yes
-
 export EDITOR="nvim"
 
 start_tmux() {
