@@ -1,6 +1,6 @@
 # Copy tmux.conf
 echo "Copying tmux.conf..."
-cp ./dotfiles/tmux.conf "$HOME/.tmux.conf"
+cp ./dotfiles/.tmux.conf "$HOME/.tmux.conf"
 echo "Tmux.conf copied successfully!"
 
 show_separator
