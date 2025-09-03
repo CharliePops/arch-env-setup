@@ -4,6 +4,9 @@ sudo pacman -S --noconfirm --needed \
     bash-completion \
     btop \
     chromium \
+    docker \
+    docker-buildx \
+    docker-compose \
     eza \
     fzf \
     neovim \
@@ -24,3 +27,9 @@ show_separator
 code --install-extension dbaeumer.vscode-eslint 
 code --install-extension esbenp.prettier-vscode 
 code --install-extension eamodio.gitlens
+
+# Install lazyvim
+if [[ ! -d "$HOME/.config/nvim" ]]; then
+  git clone https://github.com/LazyVim/starter ~/.config/nvim
+  rm -rf ~/.config/nvim/.git
+fi

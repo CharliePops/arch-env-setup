@@ -20,15 +20,21 @@ fi
 
 # get username and email from input
 read -p "Enter your username for git: " USERNAME
-read -p "Enter your email for git: " EMAIL
+read -p "Enter your email for git and ssh: " EMAIL
 
 echo "Username: $USERNAME"
 echo "Email: $EMAIL"
+echo "$0"
+
+show_separator
 
 echo "Home directory: $HOME"
 
 # Set configuration
 source ./config.sh
+
+# Copy dotfiles
+source ./dotfiles.sh
 
 # Install packages
 source ./packages.sh

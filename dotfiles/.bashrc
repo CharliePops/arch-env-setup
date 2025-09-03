@@ -42,4 +42,4 @@ export EDITOR="nvim"
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/share/nvm/init-nvm.sh" ] && \. "/usr/share/nvm/init-nvm.sh"
 
-source ./functions.sh
+source "$HOME/functions.sh"
